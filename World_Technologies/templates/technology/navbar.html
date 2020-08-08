@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+{% block content %}
+    <nav class="navbar navbar-expand-sm bg- navbar-dark nav1">
+      <img src="{% static 'images/pic.jpeg' %}" alt="'no image" id="im"><br>
+      <p id="p">WORLD TECHNOLOGIES</p>
+      <img src="{% static 'images/python.jpg' %}" id="im1" alt="no image">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    </nav>
+
+
+
+    <nav class="navbar navbar-expand-sm  navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class=" btn btn-primary a btn-sm" href="{% url 'home' %}">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-secondary a btn-sm" href="{% url 'about' %}">About</a>
+        </li>
+            <li class="nav-item">
+          <a class="btn btn-dark a btn-sm" href="{% url 'services' %}">Services</a>
+        </li>
+
+          <li class="nav-item dropdown">
+          <a class=" dropdown-toggle btn btn-info a btn-sm" href="#" id="navbardrop" data-toggle='dropdown'>
+            Batches</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Offline</a>
+              <a class="dropdown-item" href="#">Online</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class=" btn btn-warning a btn-sm text-white" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class=" btn btn-danger a btn-sm" href="#">Gallery</a>
+        </li>
+      </ul>
+      <a href="{% url 'demo' %}" id='r' class="btn btn-primary btn-sm a"> Register for Demo</a>
+  </div>
+    </nav>
+
+{% endblock %}
+</body>
+</html>

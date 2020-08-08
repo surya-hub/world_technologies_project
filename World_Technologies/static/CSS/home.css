@@ -1,0 +1,189 @@
+#p{
+  font-size: 90px;
+  margin-left:100px;
+  text-shadow: 5px 5px 3px #50C7C7;
+  font-family: 'Oswald', sans-serif;
+  color:#E6D307;
+
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+#im{
+  height: 30%;
+  width: 8%;
+
+  border-radius: 50%
+}
+#im1{
+  width: 12%;
+  height: 12%;
+  border-radius: 30%;
+  margin-left:100px;
+}
+li{
+  margin-left: 50px;
+}
+#r{
+  margin-left: 300px
+}
+.a:hover{
+
+  border-radius: 20%;
+  background-color: #11D496;
+}
+nav{
+  border: 1px black solid;
+}
+span{
+  font-size: 12px;
+  margin-left: 2%;
+}
+#cap{
+  margin-left: 4%;
+}
+.dropdown-menu{
+  border: black 1px solid;
+  background-color: #e0aaa6;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-left: 250px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.page-footer{
+  background-color: black;
+}
+.h6{
+  margin-top: 50px;
+}
+u{
+  color: #50C7C7;
+  width: 60%;
+}
+.pro{
+  margin-left: 0px;
+}
+
+#g{
+  margin-top: 20px;
+
+}
+.marquee {
+  background-color: #7444ff;
+    color:#FFFF00;
+  font-family: 'Bebas Neue', cursive;
+  height: 50%;
+  font-weight: lighter;
+
+}
+
+.page-footer{
+  margin-top: 10%;
+}
+
+
+.container-fluid{
+  height: 250px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.jumbotron{
+    padding: 0px;
+}
+.navbar{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+.nav1{
+    background-color: rgba(43, 43, 43, 0.69);
+}
+.blinking{
+    animation:blinkingText 1.2s infinite;
+    color: #eb0000;
+    font-size: 15px;
+    border: 1px red solid;
+    border-radius: 50%;
+    background-color: white;
+}
+@keyframes blinkingText{
+    0%{     color: #d60000;    }
+    49%{    color: #eb0000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #eb0000;    }
+}
+.card-img-top{
+    height: 150px;
+    width: 90%;
+}
+.carousel-inner img {
+  height: 400px;
+  width: 100%;
+
+  }
+#s{
+    margin-bottom: 20px;
+}
+
+.jumbo{
+  padding: 10px;
+}
+#page-title {
+    font-size: 20px;
+    font-weight: 600;
+margin-bottom: 20px;
+    padding: 20px 0;
+}
+p{
+    margin-bottom: 26px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+
+}
+.card{
+    margin-left: 20px;
+}
+
+
+
+/* services*/

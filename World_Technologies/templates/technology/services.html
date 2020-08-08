@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>
+        Services
+    </title>
+</head>
+<body>
+<style>
+    .pic{
+        max-width: 100px;
+        max-height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+</style>
+{% include 'technology/navbar1.html' %}
+<br>
+<div class="containe-fluid">
+    <div class="row">
+        <div class="offset-md-2">
+            <div class="jumbotron">
+                    <h1 class="text-center">List of Courses</h1>
+                    <table class="table table-bordered table-hover bg-dark ">
+                        <thead class="bg-primary text-white text-center">
+                        <tr>
+                            <th>COURSE NAME</th>
+                            <th>TRAINER NAME</th>
+                            <th>DURATION</th>
+                            <th>START DATE</th>
+                            <th>PHOTO</th>
+                            <th>CONTENT</th>
+                            <th>REGISTRATION</th>
+                        </thead>
+                        <tbody class="text-center">
+                        {% for i in course %}
+                            <tr class="text-white">
+                                <td>{{ i.cname }}</td>
+                                <td>{{ i.trainer_name }}</td>
+                                <td>{{ i.duration }}</td>
+                                <td>{{ i.start_date }}</td>
+                                <td><img  src="{{ i.photo.url }}" class="img-responsive pic" /></td>
+                                <td>
+                                    <a href="{{ i.content.url }}" class="btn btn-outline-danger">Download</a>
+                                </td>
+                                <td><a class="btn btn-outline-success" href="{% url 'demo' %}">Demo Link</a> </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

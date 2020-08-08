@@ -1,0 +1,96 @@
+{% extends 'technology/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title_block %}
+            Abou Us
+        {% endblock %}
+    </title>
+</head>
+<body>
+{% block content %}
+    <h1 id="page-title">Vision and Mission</h1>
+
+    <div class="entry-content" itemprop="text">
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To enrich the knowledge &amp;skill sets of young software engineers by providing value added training in the areas
+            of Software Development &amp;Testing.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To serve the industries by providing trained human resources in the above areas.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To provide quality Software Training &amp; Consulting Services in the areas of J2EE, .NET, ERP, Database
+            Administration, Testing, Content Management with Live Projects.</p>
+        <span class="cp-load-after-post"></span>
+    </div>
+
+    <h1 id="page-title">Software Training Infrastructure</h1>
+    <div class="entry-content" itemprop="text">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NareshIT Training Institute has World Class Lab facilities located in the heart of the city of Hyderabad &amp; Chennai.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World Class Software Training Lab having modern classroom equipped with latest teaching aids.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Full fledged Software Lab with state-of-the-art PCs connected in network and Open Source/Development software.</p>
+        <span class="cp-load-after-post"></span>
+    </div>
+    <h1 id="page-title">Management Team</h1>
+    <div class="entry-content" itemprop="text">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NareshIT Management have more than 15 years of experience in IT Industry in various domains.&nbsp; With a motto of empowering youth in IT education to IT Careers,
+            Management has shown great interest in this field and was able to see vision of the company goal.&nbsp;
+            Storategies adopted to make the students ready for the Job are different and hence able to see the positive response
+            frm Job seekers and hiring companies.&nbsp; Developing the core team members and encouraging software trainers to deliver
+            keeping the standards in mind which is our passion and quickly adopting to latest technology trends and cutting-edge technologies</p>
+
+            <p>NareshIT has associated with National and International organizations for maintaining and developing the Standard &amp; Quality gives an edge to be with IT Industry heights.&nbsp;
+            The leadership quality of the management drives the employees to be satisfactory level and to execute the strategies with high Quality.</p>
+        <span class="cp-load-after-post"></span>
+    </div>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/c3.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title"> Venkatesh M</h6>
+                    <p class="card-text">Founder&CEO</p>
+                    <a href="#" class="btn btn-outline-info">Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/c1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Sunder Pichai</h6>
+                    <p class="card-text">Co Founder&EO</p>
+                    <a href="#" class="btn btn-outline-primary">Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{% static 'images/c2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Laila Lilly</h6>
+                    <p class="card-text">Co Founder & Manager</p>
+                    <a href="#" class="btn btn-outline-secondary">Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 15rem;">
+                <img src="{% static 'images/c4.jpeg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="card-title">Aravind M</h6>
+                    <p class="card-text">Co Founder & Chiarman</p>
+                    <a href="#" class="btn btn-outline-danger">Profile</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock %}
+
+</body>
+</html>
